@@ -1,0 +1,29 @@
+Proceso calculadora_v2
+	definir n1, n2, op, res Como Real;
+	Escribir "ingresa vaalor 1 ";
+	leer n1;
+	Escribir "ingresa valor 2 ";
+	leer n2;
+	//menu
+	Escribir "Bienvenido a mi calculadora";
+	Escribir "Para sumar presiona 1 ";
+	escribir "para restar presiona 2 ";
+	Escribir "para multiplicar presiona 3 ";
+	Escribir "para dividir presiona 4 ";
+	Escribir "para salir presiona 5 ";
+	leer op;
+	
+	segun op Hacer
+		caso 1: res = (n1 + n2);
+			Escribir "la respuesta es ", res;
+		caso 2: res = (n1 - n2);
+			Escribir "la respuesta es ", res;
+		caso 3: res = (n1 * n2);
+			escribir "la respuesta es ", res;
+		caso 4: res = (n1 / n2);
+			escribir "la respuesta es ", res;
+		caso 5: escribir "Gracias por usar mi calculadora ";
+		De Otro Modo:
+			Escribir "opcion no valida, elegir entre 1, 2, 3, 4, 5, ";
+	FinSegun
+FinProceso
